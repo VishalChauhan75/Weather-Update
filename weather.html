@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="top">
+    <h1>Weather update</h1>
+    <div class="cty">
+      <label for="cityName">Enter City Name:</label>
+      <input type="text" id="cityName" placeholder="City name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+  </div>
+    <div style="display: block" id="middle">
+      <h2>Weather Information</h2>
+      <p>
+        <img src="/vishal/image/location.png" width="18px" alt="" /> City:
+        <span id="city"></span>
+      </p>
+      <p>Temperature: <span id="temperature"></span> °C</p>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Description: <span id="description"></span></p>
+    </div>
+    <footer>
+      <p id="copy">Copyright 2023 &copy Thakur Vishal Chauhan</p>
+    </footer>
+  </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
